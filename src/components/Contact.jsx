@@ -4,18 +4,18 @@
 import "./Contact.css";
 import React from 'react';
 
-const Contact = (props) => {
-
+const Contact = ({ data }) => {
+    const { name, email, phone, photo } = data;
     return (
         <>
         <div className="contact-item">
             <div className="contact-images">
-                <img src={props.photo} />
+                <img src={photo} />
             </div>
             <div className="contact-content">
-                <h4>{props.name}</h4>
-                <a href={`tel:${props.phone}`}>{props.phone}</a>
-                <a href={`mailto:${props.email}`}>{props.email}</a>
+                <h4>{name}</h4>
+                <a href={`tel:${phone}`}>{phone}</a>
+                <a href={`mailto:${email}`}>{email}</a>
             </div>
             
         </div>

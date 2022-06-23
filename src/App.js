@@ -13,7 +13,7 @@ const App = () => {
 
       <div className="contact-grid">
         {contacts.map((item) => (
-          <Contact key={item.name} name={item.name} photo={item.photo} email={item.email} phone={item.phone} />
+          <Contact key={item.name} data={item} />
         ))}
       </div>
       
