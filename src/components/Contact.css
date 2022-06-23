@@ -1,0 +1,44 @@
+.contact-grid {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 1;
+}
+
+.contact-item {
+    border: 2px solid #000;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contact-item:not(:last-child) {
+    margin-bottom: 24px;
+}
+
+.contact-images {
+    flex-basis: 250px;
+    margin-right: 40px;
+    display: flex;
+}
+
+.contact-images img {
+    width: 100%;
+    display: block;
+}
+
+.contact-content a {
+    color: #000;
+    text-decoration: none;
+}
+
+.contact-content h4 {
+    font-size: 24px;
+    margin: 0 0 16px 0;
+}
